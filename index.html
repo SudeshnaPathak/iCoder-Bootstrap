@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>iCoder - Heaven for Programmers</H1>
+  </title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">iCoder</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Actions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Technology</a>
+            <a class="dropdown-item" href="#">Web Development</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Support</a>
+            <a class="dropdown-item" href="#">Write for Us</a>
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="mx-2">
+      <button class="btn btn-danger" data-toggle="modal" data-target="#LoginModal">Login</button>
+      <button class="btn btn-danger" data-toggle="modal" data-target="#SignUpModal">SignUp</button>
+    </div>
+  </nav>
+
+  <!-- Login Modal-->
+  <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Login to iCoder</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SignUp Modal-->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="SignUpModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignUpModalLabel">Create an iCoder Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100"
+          src="https://img.freepik.com/premium-vector/web-development-coding-programming-futuristic-banner-computer-code-computer_3482-10248.jpg"
+          alt="First slide" width="1400" height="450">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to Icoder</h5>
+          <p>Technology News , Developments & Trends</p>
+          <div class="text-center">
+            <button class="btn btn-primary">Technology</button>
+            <button class="btn btn-danger">Web Development</button>
+            <button class="btn btn-success">Tech Fun</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="https://www.shutterstock.com/image-vector/concept-computer-programming-developing-software-600nw-2149658841.jpg"
+          alt="Second slide" width="1400" height="450">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>The Best Coding Blog</h5>
+          <p>Technology News , Developments & Trends</p>
+          <div class="text-center">
+            <button class="btn btn-primary">Technology</button>
+            <button class="btn btn-danger">Web Development</button>
+            <button class="btn btn-success">Tech Fun</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="https://media.licdn.com/dms/image/D5612AQFlxMRpK-On8g/article-cover_image-shrink_720_1280/0/1670602482212?e=2147483647&v=beta&t=1HWOX81_1_mfqzP2kdHty9dnCVgb-dmVsMuYhBKCnRQ"
+          alt="Third slide" width="1400" height="450">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Award Winning Blog</h5>
+          <p>Technology News , Developments & Trends</p>
+          <div class="text-center">
+            <button class="btn btn-primary">Technology</button>
+            <button class="btn btn-danger">Web Development</button>
+            <button class="btn btn-success">Tech Fun</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Global Conferences</a>
+            </h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+            alt="Thumbnail [200x250]"
+            src="https://allconferencealert.net/blog/wp-content/uploads/2016/10/international-conference-732x380.jpg"
+            data-holder-rendered="true" style="width: 200px; height: 250px;">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Learn Web Designs</a>
+            </h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+            alt="Thumbnail [200x250]"
+            src="https://sklc-tinymce-2021.s3.amazonaws.com/comp/2023/04/full-stack%20web%20development_1681290664.png"
+            data-holder-rendered="true" style="width: 200px; height: 250px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-danger">Frontend</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Bootstrap Templates</a>
+            </h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+            alt="Thumbnail [200x250]"
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8REBAQEQ8QEBUQDQ8QDxIQEBAQFRAQFxUWGBYVFRcYHyggGBolGxUTITEhJSkrOi4uFx8/ODQsNzQ5LysBCgoKDg0OGxAQGislICU3MC0tMy8tLS4tLS0vLTcrLS0rLS0tLS8tLy0rNy0tLS8vKzctLS0rLS0tMTctLS0tNf/AABEIAJ8BPgMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAwIEBQYHCAH/xAA8EAACAgEBBgMFBgMIAwEAAAAAAQIDEQQFBhIhMVFBYXEHEyIygUJSYnKRoRSx0SMzY5KiweHwU3OCQ//EABoBAQADAQEBAAAAAAAAAAAAAAABAgMFBAb/xAApEQEAAgIBAwQABgMAAAAAAAAAAQIDEQQhMVEFEiJBE2FxkaHRMoHw/9oADAMBAAIRAxEAPwDuIAAAAAAAAAAAAAAAAAAAAAAYvbm3tPpI5slmTXwVx5zn9PBebLVrNp1WNymI2yh8bSOTbY3w1d7ajN0QzyhU3F485rm/29DA2TcnmTcn3k8v9WdKnplpj5W1/LSMXl3gHCtPqbK3muydb71zlB/sza9hb9XVtR1ObodONJKcf9pL9yuT029Y3Wd/wTin6dKBb6HW1XwVlU4zi/Fd+zXg/Jlwc6YmJ1LIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8nJJNtpJLLbeEl3ZjNube0+khxWz+Jr4K485z9F282cu3i3p1Gsbi37urPw1RfJ+c39p/t5Hr4/Evm69o8/0vWk2bXvJv5GOatJiUuadzWYx/In8z83y9Tn9+onOTnOUpyk8ylJttv1IMjJ3MOCmKNVh6K1iOyTIyR5GTZZJkZI8jIGQ2Vta/TT95TNxf2l1jNdpLx/7g6Zu3vhRqsQnim3pwN/DN/gfj6dfU5HkcR5uRxaZo69/KlqRZ6BBy/drfq2nFep4rq+in1sgvN/bXrz830OkaHW1XQVlU42Rl0lF/s+z8jh5+NfDPy7eXntSargAHnVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxm3dvafRw47p4bT4K44c5/lX+75Fq1m06iOpEbZKUkk23hJZbfLCNF3m3/hDNWkxZLo7nzhH8i+2/Pp6mo7y73ajWNxb91VnlVB/Mvxy+0/Lp5eJr+Tr8b0+I+WTr+TeuLyudTqp2TlZZOU5SeZSk8tkWSPIydNsk4j7HLaSTbbwkllt9kvEyW7+72p1ssVRxBPE7Z5UI/X7T8l9cdTpWg2VoNlVe9smuLGHdZznN/driunovrk82flVx/GOtvEKWvENE0O5W0LVn3KqT6O6ah/pWZL6our/Z9tCKyvcT8o2yT/1RS/cutre0q+UmtNVCuOeUrU5za74TxH/UQbO9pGrhJe+hXdDPxcK93NLunnD9GvqjH3cyY92o/RX5tY12juonwXVzql1xNYyu6fRrzRb8R2vW6XTbS0aa+KNsOKmePirn4PyafJr1RxBN+PJ+K7M24vI/GidxqY7rUt7kmRkjyMnqXScRf7H2zfpZ8dM3HPzRfOE12lHx9epjMjJFqxaNSh2TdnfGjV4hLFN3/jk+U3+CXj6dfXqbKedlL+qN23Y3/sq4atVxXV8krFzsh+b76/f16HI5Pp+vli/b+mNsXh1MEGi1lV0FZVONkJdJReV/w/InOXMTHSWIACAAAAAAAAAAAAAAAAAAAAAAAABqu/W9X8FCNdaUrrU3HPNVw6cbXi88kvXth8i1esstm7LZysnL5pSeW/6LyNk9qUJraDcs4lRU4flWU/8AVxfqajk+h4WKtMUTHeXpx1iIScQyR5GT2NEnEbHuTs7Rai/h1V3C8r3dXyq59nZ4fl5N9zWMjJTJWbVmInSJjcPQesrsq08o6SqpyhDFNcn7uHpyXry5ZfiupxHb2r1dl8v4tz97Hk4TXDwLtGPRR9Ovdmd3W3/u0/DVqOK+rkk85trXk3868nz8/A3/AFmh0G1aFJONiw+C2t4sqfbun3jJfQ5WP3cS/wA67iftjHwnq4lxFzs3Q3aiyNVMHZOXgukV96T+zFdzcKfZlqP4hwldBULn72PzyX3VB9JeecevQ2nV7Q2dsen3cYrjayq4Ylba/vTb6Lzf07Hqyc2v+OL5TP8A3VeckfTKbJ2T/DaKGmjbwuFUlK3C5Sk25ySfTm3jPTl1NUro3b02ISnXa1ycpO3UdO/AnFfoaXvFvVqtbJ+8lwV5+GmDfAvzfffm/okYTJni4V+s3vMTPWdf2iMc/cux0bu7F1kG6IVPu6JuEoPziny+qNM3t3Kt0ad1cndSvmbWJ1fnS5NfiX6I1jZ20LqLY3UycZxfw4+1+FrxT6YPQU0p1tWRWJVtWRl0w18Sfl1MstsnEvHy3WfKszNJ7vPHEMlEmsvheVl8LfjHw/Y+ZOu3ScQ4iPIyBldibd1Gks46Z4y1xwfOFi7SX+65nat3tsV6zTwvgsZypxfNwmusX39fFNHAMnU/ZDCf8PqZPPDLURUfzKC4v5x/Q5vqOKs4/f8AcMstY1tvwAOI84AAAAAAAAAAAAAAAAAAAAAAADVvaHs3SW6SVuotVHucuu5riab+xwrnPi5fCufTBxCq5SWU/XyNv9se052a2Omy+DT1Qko+Dsmm3L/Lwr9Tn+GnlPDPoOFjtTFG579f0enHGqspkZLOrVeEuT7+D/oXHEezbRJkZI+IZAkyX2yNsajS2e9oscH9pdYzXacejX/VgxuRxETETGpQ7Xupv3p9Xw1WYovfJQk/gtf+HLv+F8/XqY3fL2f++lPUaWX9pJuVlVkm1Y/Fxk/lfk+Xocmybxup7RLtPw1arivq5JTzm2tfX5168/Xoc6/Fvit78H7M5pMTurT9TTOucq7ISrnB4lCacZJ+j/n4n3S6ey2ca6oSsnJ4jCCcm/8Ajz8Dt20NmbP2tRGacbFhqu+ppTrfivLn1jJeqLeMdmbFoy2oykurxO/USXbyz6JZ8CY9Q3GorPu8H4n5dWN3N3Djp3HU6txlZH4oVp5hS/vSf2pL9F59TG7+79QnCek0kuJSTjdfH5XHxhW/HPjLpjpnw1nerfXU67MP7mnPKqL+deHvJfa9Onr1Na4i+LjWtb8TNO5+o+oTFJmd2SZGSPIye5okyMkTmlzfItbdU3yjyXf+g2MpoHRK6uu69UQnNKdnC5e7XdpdPBZfTOXyPQmyNDTRRXVSkq4xXC088WefE34t9c+Z5ijHB2r2N7Tnbo7KZtv+GtUa2/CuSyo/RqX0wc71HHacfu30j6ZZY6bb+ADiPOAAAAAAAAAAAAAAAAAAAAAAAA5d7X92LJuOvpi58Nar1MYptqMcuNmOyy0/p4ZOT5Oxe1nfOzSRjpNNPguthx2WL5qqm2lw9pSafPwSfjhnE4WtcnzX7o73Cvb8KPf/AK/R6cczrquWsn2u2UfNdu3oURknzR9PYuvIWprKf/BVkx+Mc08Mmr1Hg+T/AGY35F1kZI8jJZKTIyR5GQMnsbbep0lnvNPa62+Ul1jNdpRfJ/7FtrdbbdZK26yVk5fNOby35eS8lyRa5GSvtjfu11QkyMkeT45Fkpckdt6j5vsW1mob5R5ef9CiMSu/CFUpOXN/ReCKkU5KZ2Jdf0G4gT1VylKMIxlOUpKMYxTlKUn0SS6s777Ot3JaHR8Nn97dP3tyXPgbSUYfRJfVs8+aDaN9NsL6bJVTrlxQlHweMPOeqabTT6ps9Fbi7yraOkjc0o2Rk6r4rorUk215NNNepzfUL3mkRHb7ZZZnTYgAcdgAAAAAAAAAAAAAAAAAAAAAAAA4P7aNFOG0veyT4b9PW634Zh8Mor0+F/8A0aCeoN5t3tPr6HRfF4zxVzjhTqn4Sg+/l0ficF3w3I1mzm5TXvaM4jqIJ8K7KxfYf7eZ1+LyK2rFJ7w3pbcaawsrmiau5Pl0ZDkpaPZFpjsuvMnxrJbQua681+5PGWehpFolO1ULHHzX8ieNifQt8lOPFciYnQvMjiLaN/dYK/ex7r9S8WhO02Rkgd0e6/mUSub6cvMibQbT2XJeb7EEm5df0KYoqyV3tCpDJHOxLqQSm5eS7FZvEG0s7/CP6kaR8QyU3M90K8navYZopx0moukmo3ahKvPioRxKS+ra/wDk1fcn2X36nhu1nFp6eUlX8t1y8/8Axxfd8/Tqdt0mmrqrhVXCMIVxUYQisKMV0SRz+ZyKzX2VZXtHZMADmMgAAAAAAAAAAAAAAAAAAAAAAAApsrjJOMoqSkmpRkk00+qafVFQA5Pvr7Joy4r9nYg+blppP4JP/Ck/k/K+XbhORarT2VTlVbCVc4PE4TTjKL80z1qa/vZufo9owxdDhnFYrvrwrIeWftR/C8r68z24eZNel+sNK38vMp8Ta5o2TfDcnWbNk3ZH3tLeIaitPgeeimutcvJ8uzZrWToxeLRuGu9p67k+XRkmSzaKoXNdea7+JpGTyna6ZTwo+KWeh9yaJFFFRTkpnYl1I3ECTJDO/wAI/qRTm5eS7HxGc332RtUu7PuShs6HuV7LtTq+G7V8eloeGo4xdavJP+7j5vn5eJnbJWkblWZ01HYOwtVrbfdaap2S5ccukK13nLpFfu/BM7huT7N9LoeG63Gp1C5qcliFT/w4Px/E+fbHQ2vZGydPpKo06eqNUI+EV1feT6yfmy9Obm5Vr9K9IZWvMgAPIoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAouqjOLjOKlGSalGSUlJPqmn1RyXff2SJ8V+zcJ83LSylhP/wBMn8v5Xy7NdDroNMeW1J3CYmYeRdRTOucq7ISrnB4nCcXGUX2afNEWT05vfuZo9pQxdDgsisV314VkPJv7Ufwv9upwbfDcvWbNl/ax95U3iGorT4JZ6KX3JeT+jZ0cXIrfp9tYtEtb9Hgq95Lv+xTkZNtrKnOXf9ClIZPjkTsV5MhsLYmq1tqp01UrZcuLHKNa+9OT5RX8/DJt+5Hsv1Os4btTxaWh4aTWLrl+GL+SP4pfReJ3DYuxtNo6lTpqo1QXhHrJ/ek3zlLzZ5svJinSOsqTfTUtx/ZnptDw3X8Op1C5qTX9nS/8OL6v8T59sG+AHOve153ZnM7AAVQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABHfRCyMoTjGcZJxlGSUoyT8Gn1RIAOVbzexqiyTs0N38O3l+5tTnVn8Ml8UF/mNK1nsm2zD5aabuf/5XwX1/tOE9FA9FeTePzWi8vPug9j+1rGvefw9CfXjtdkkvSCab+v1Ojbn+y7RaKUbbX/F3R5xnZFKut94V81nzbflg3wFb8i9uhNpkABiqAAAAAAAAAAAAAAAAAAAAAP/Z"
+            data-holder-rendered="true" style="width: 200px; height: 250px;">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <strong class="d-inline-block mb-2 text-warning">Python</strong>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Learn Python</a>
+            </h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
+            alt="Thumbnail [200x250]"
+            src="data:image/jpeg;base64,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"
+            data-holder-rendered="true" style="width: 200px; height: 250px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>© 2023-2024 iCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
